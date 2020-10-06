@@ -1,6 +1,7 @@
 import React from 'react'
 import { Result, Button, Typography } from 'antd';
 
+import Datos from './Datos'
 const { Paragraph, Text } = Typography;
 
 export default function Rechazado() {
@@ -29,6 +30,7 @@ export default function Rechazado() {
       </Paragraph>
     </div>
   </Result>
+  <Datos/>
         </div>
     )
 }

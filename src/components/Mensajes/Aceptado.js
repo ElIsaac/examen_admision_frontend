@@ -1,5 +1,6 @@
 import React from 'react'
 import { Result, Button } from 'antd';
+import Datos from './Datos'
 export default function Aceptado() {
     return (
         <div>
@@ -14,6 +15,7 @@ export default function Aceptado() {
                     <Button key="buy">Buy Again</Button>,
                 ]}
             />
+        <Datos/>
         </div>
     )
 }
