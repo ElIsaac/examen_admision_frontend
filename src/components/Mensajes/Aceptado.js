@@ -1,7 +1,7 @@
 import React from 'react'
 import { Result, Button } from 'antd';
 import Datos from './Datos'
-export default function Aceptado() {
+export default function Aceptado({alumno}) {
     return (
         <div>
             <Result
@@ -15,7 +15,7 @@ export default function Aceptado() {
                     <Button key="buy">Buy Again</Button>,
                 ]}
             />
-        <Datos/>
+        <Datos alumno={alumno}/>
         </div>
     )
 }

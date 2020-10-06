@@ -1,5 +1,5 @@
 import React from 'react'
-import { Result, Button, Typography } from 'antd';
+import { Result, Typography } from 'antd';
 
 import Datos from './Datos'
 const { Paragraph, Text } = Typography;

@@ -9,28 +9,40 @@ import Rechazado from './Mensajes/Rechazado';
 export default function Resultado(curp) {
 
     const [alumno, setAlumno] = useState({});
+    const [load, setLoad] = useState(true)
 
-    useEffect(() => {
-        if(alumno ==={}){
+     useEffect(() => {
+        
             traerUsuario(curp).then(response => {
             setAlumno(response);
+            setLoad(false)
           });
-        }
-    }, [alumno])
+        
+    }, [])
+    console.log(curp.curp)
     console.log(alumno)
 
+
     const alumnoMarkup = ()=>(
-        (alumno==={})
+        (load===true)
         ?
         (<div> Cargando alumno, por favor espere...</div>)
         :
-    (<div>{alumno.aceptado ? <Aceptado alumno={alumno} /> : <Rechazado alumno={alumno}/> }</div>)
-      );
+    (<Aceptado alumno={alumno} /> )
+      ); 
       
       return(
         
-        {alumnoMarkup()}
-
+        <>
+         <h1>{curp.curp}</h1>
+        {
+          (load===true)
+          ?
+          (<div> Cargando alumno, por favor espere...</div>)
+          :
+          (<div>{alumno.aceptado ? <Aceptado alumno={alumno} /> : <Rechazado alumno={alumno}/> }</div>)
+        }
+        </>
       )  
     
 }
