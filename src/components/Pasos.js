@@ -7,7 +7,7 @@ export default function Pasos(props) {
         <div>
             <Steps current={props.paso}>
                 <Step title="Ingresa tu curp" description="Ingresa tu curp correctamente" />
-                <Step title="In Progress" subTitle="Left 00:00:08" description="This is a description." />
+                <Step title="Listo" subTitle="¿Y ahora que?" description="Sigue las recomendaciones de abajo" />
             </Steps>
         </div>
     )

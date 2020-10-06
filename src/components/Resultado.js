@@ -34,13 +34,26 @@ export default function Resultado(curp) {
       return(
         
         <>
-         <h1>{curp.curp}</h1>
         {
           (load===true)
           ?
           (<div> Cargando alumno, por favor espere...</div>)
           :
-          (<div>{alumno.aceptado ? <Aceptado alumno={alumno} /> : <Rechazado alumno={alumno}/> }</div>)
+          (<div>
+            
+            {
+            alumno.aceptado === true && <Aceptado alumno={alumno} /> 
+            }
+            {
+              alumno.aceptado===false&& <Rechazado alumno={alumno}/> 
+            }
+            {
+              alumno.titulo === "error-404" && <CurpMalEscrita alumno={alumno}/> 
+            }
+            {
+              alumno.titulo === "error-500" && <ErrorDeServidor alumno={alumno}/> 
+            }
+            </div>)
         }
         </>
       )  

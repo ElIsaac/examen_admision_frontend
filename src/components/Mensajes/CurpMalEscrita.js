@@ -2,14 +2,17 @@ import React from 'react'
 import { Result, Button } from 'antd';
 
 import Datos from './Datos'
-export default function CurpMalEscrita({curp}) {
+export default function CurpMalEscrita({alumno}) {
+    const reload = () => {
+        window.location.reload();
+    }
     return (
         <div>
              <Result
     status="404"
-    title="Error, su curp no ha sido encontrada"
-    subTitle={curp}
-    extra={<Button type="primary">Back Home</Button>}
+    title={alumno.curp+": No ha sido encontrada."}
+    subTitle={alumno.mensaje}
+    extra={<Button onClick={reload} type="primary">Buscar de nuevo</Button>}
   />
   
         </div>

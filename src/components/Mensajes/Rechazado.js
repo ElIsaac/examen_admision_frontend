@@ -4,33 +4,31 @@ import { Result, Typography } from 'antd';
 import Datos from './Datos'
 const { Paragraph, Text } = Typography;
 
-export default function Rechazado() {
-    return (
-        <div>
-            <Result
-    status="Lo sentimos "
-    title="Submission Failed"
-    subTitle="Please check and modify the following information before resubmitting."
-   
-  >
-    <div className="desc">
-      <Paragraph>
-        <Text
-          strong
-          style={{
-            fontSize: 16,
-          }}
-        >
-          The content you submitted has the following error:
+export default function Rechazado({alumno}) {
+  return (
+    <div>
+      <Result
+        status="error"
+        title="No haz sido aceptado"
+        subTitle="No te preocupes esto ocurre mas de lo comun. ¡Animo!"
+
+      >
+        <div className="desc">
+          <Paragraph>
+            <Text
+              strong
+              style={{
+                fontSize: 16,
+              }}
+            >
+              Oferta educativa
         </Text>
-      </Paragraph>
-      <Paragraph> <a>Thaw immediately &gt;</a>
-      </Paragraph>
-      <Paragraph><a>Apply Unlock &gt;</a>
-      </Paragraph>
-    </div>
-  </Result>
-  <Datos/>
+          </Paragraph>
+          <Paragraph> <a href="https://alaescuela.com.mx/escuelas/bachillerato/chihuahua/juarez/juarez.php">Checa estas opciones &gt;</a>
+          </Paragraph>
         </div>
-    )
+      </Result>
+      <Datos alumno={alumno} />
+    </div>
+  )
 }

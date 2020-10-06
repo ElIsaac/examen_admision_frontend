@@ -9,7 +9,7 @@ import Resultado from './Resultado'
 export default function LayoutAntd() {
 
     const [paso, setPaso] = useState(0)
-    const [curp, setCurp] = useState("")
+    const [curp, setCurp] = useState("test")
 
     const { Header, Content, Footer } = Layout;
     return (
@@ -23,7 +23,9 @@ export default function LayoutAntd() {
       </Menu>
     </Header>
     <Content className="site-layout" style={{ padding: '0 50px', marginTop: 64 }}>
+      <hr/>
       <Pasos paso={paso}/>
+      <hr/>
       <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
         {
             paso === 0 && <Curp setCurp={setCurp} setPaso={setPaso}/>
@@ -33,7 +35,7 @@ export default function LayoutAntd() {
         }
       </div>
     </Content>
-    <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+    <Footer style={{ textAlign: 'center' }}>Cbtis 128 isaac ramirez velez 5w</Footer>
   </Layout>
     )
 }

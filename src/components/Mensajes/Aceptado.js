@@ -2,17 +2,20 @@ import React from 'react'
 import { Result, Button } from 'antd';
 import Datos from './Datos'
 export default function Aceptado({alumno}) {
+    const reload = () => {
+        window.location.reload();
+    }
     return (
         <div>
             <Result
                 status="success"
-                title="Successfully Purchased Cloud Server ECS!"
-                subTitle="Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait."
+                subTitle= {`Felicitaciones ${alumno.nombre} haz sido aceptado en el cbtis 128`}
+                title="Bienvenido a la casa de los jaguares"
                 extra={[
-                    <Button type="primary" key="console">
-                        Go Console
+                    <Button type="primary" key="opcion">
+                        <a href="https://www.cbtis128.edu.mx/">Que sigue</a>
       </Button>,
-                    <Button key="buy">Buy Again</Button>,
+                    <Button onClick={reload} key="Inicio">Volver al inicio</Button>,
                 ]}
             />
         <Datos alumno={alumno}/>
