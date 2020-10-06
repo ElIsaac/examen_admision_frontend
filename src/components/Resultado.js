@@ -22,14 +22,6 @@ export default function Resultado(curp) {
     console.log(curp.curp)
     console.log(alumno)
 
-
-    const alumnoMarkup = ()=>(
-        (load===true)
-        ?
-        (<div> Cargando alumno, por favor espere...</div>)
-        :
-    (<Aceptado alumno={alumno} /> )
-      ); 
       
       return(
         
