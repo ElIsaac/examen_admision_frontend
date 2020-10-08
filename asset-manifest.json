@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/examen_admision_frontend/static/css/main.4a386d1f.chunk.css",
+    "main.js": "/examen_admision_frontend/static/js/main.f2723083.chunk.js",
+    "main.js.map": "/examen_admision_frontend/static/js/main.f2723083.chunk.js.map",
+    "runtime-main.js": "/examen_admision_frontend/static/js/runtime-main.d2f48b7d.js",
+    "runtime-main.js.map": "/examen_admision_frontend/static/js/runtime-main.d2f48b7d.js.map",
+    "static/css/2.220ccb42.chunk.css": "/examen_admision_frontend/static/css/2.220ccb42.chunk.css",
+    "static/js/2.b0a781cf.chunk.js": "/examen_admision_frontend/static/js/2.b0a781cf.chunk.js",
+    "static/js/2.b0a781cf.chunk.js.map": "/examen_admision_frontend/static/js/2.b0a781cf.chunk.js.map",
+    "index.html": "/examen_admision_frontend/index.html",
+    "precache-manifest.bf6898fc0e0e1373c630094c73d949dc.js": "/examen_admision_frontend/precache-manifest.bf6898fc0e0e1373c630094c73d949dc.js",
+    "service-worker.js": "/examen_admision_frontend/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/examen_admision_frontend/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.4a386d1f.chunk.css.map": "/examen_admision_frontend/static/css/main.4a386d1f.chunk.css.map",
+    "static/js/2.b0a781cf.chunk.js.LICENSE.txt": "/examen_admision_frontend/static/js/2.b0a781cf.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d2f48b7d.js",
+    "static/css/2.220ccb42.chunk.css",
+    "static/js/2.b0a781cf.chunk.js",
+    "static/css/main.4a386d1f.chunk.css",
+    "static/js/main.f2723083.chunk.js"
+  ]
+}
