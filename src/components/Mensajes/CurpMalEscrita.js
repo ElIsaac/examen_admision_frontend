@@ -1,7 +1,7 @@
 import React from 'react'
 import { Result, Button } from 'antd';
 
-import Datos from './Datos'
+
 export default function CurpMalEscrita({alumno}) {
     const reload = () => {
         window.location.reload();

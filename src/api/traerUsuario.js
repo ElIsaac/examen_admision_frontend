@@ -1,6 +1,6 @@
 
 export default function traerUsuario(curp){
-    return fetch("http://localhost:4000/resultados/"+curp.curp, {
+    return fetch("https://examenchido.herokuapp.com/resultados/"+curp.curp, {
         
         method: 'GET',
         mode: 'cors',

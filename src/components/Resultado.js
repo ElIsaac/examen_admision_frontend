@@ -18,7 +18,7 @@ export default function Resultado(curp) {
             setLoad(false)
           });
         
-    }, [])
+    }, [curp])
     console.log(curp.curp)
     console.log(alumno)
 
